@@ -23,7 +23,7 @@ jobs:
           pip install pandas matplotlib snakemake pulp==2.7.0 kaggle
 
       - name: Run pipeline
-        env: |
+        env: 
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: |
