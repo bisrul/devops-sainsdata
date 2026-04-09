@@ -1,0 +1,14 @@
+# Data files (too large for Git)
+data/raw/
+data/processed/
+
+# Python cache
+__pycache__/
+*.pyc
+.venv/
+
+# Mac files
+.DS_Store
+
+# Reports (generated automatically)
+reports/
