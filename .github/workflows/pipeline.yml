@@ -24,11 +24,11 @@ jobs:
 
       - name: Run pipeline
         env: |
-          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_NAME: ${{ secrets.KAGGLE_NAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: |
           mkdir -p ~/.kaggle
-          echo "{\"username\":\"$KAGGLE_USERNAME\",\"key\":\"$KAGGLE_KEY\"}" > ~/.kaggle/kaggle.json
+          echo "{\"username\":\"$KAGGLE_NAME\",\"key\":\"$KAGGLE_KEY\"}" > ~/.kaggle/kaggle.json
           chmod 600 ~/.kaggle/kaggle.json
           snakemake --cores 1
 
